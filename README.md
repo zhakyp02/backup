@@ -1,5 +1,7 @@
 # backup
 
+# First, you can create a cloud storage bucket within a new repository
+
 ## add the Terraform remote state configuration to the root module and make the following changes: update the export URI, backup retention time, and backup schedule
 ```hcl
 data "terraform_remote_state" "master" {
