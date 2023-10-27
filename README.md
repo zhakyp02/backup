@@ -16,7 +16,7 @@ data "terraform_remote_state" "master" {
 
 
  module "cloudsql_postgres_backup_test" {
-   source = "git::https://gitlab.com/keybank/dbl00/modules/cloudsql-backup-module.git?ref=0.1.0"
+   source = "git::https://gitlab.com/module.git?ref=0.1.0"
    project_id                 = var.project_id
    export_uri                 = data.terraform_remote_state.master.outputs.export_uri
    sql_instance               = module.cloudsql_postgres_sync_test.instance_name
